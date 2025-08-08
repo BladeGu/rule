@@ -22,6 +22,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇰🇷 韩国节点
+      - 🌐 其他地区
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -267,6 +268,12 @@ proxy-groups:
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
     type: url-test
+    interval: 300
+    tolerance: 50
+  - name:  🌐 其他地区
+    include-all: true
+    filter: (^(?!.*(台|新北|彰化|TW|Taiwan|KR|Korea|KOR|首尔|韩|韓|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|香港|HK|Hong Kong|🇭🇰|HongKong|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|新加坡|坡|狮城|SG|Singapore)).*)
+    type: select
     interval: 300
     tolerance: 50
   - name: 🎥 奈飞节点
