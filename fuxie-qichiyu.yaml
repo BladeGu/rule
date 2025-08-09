@@ -98,7 +98,7 @@ proxy-groups:
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?i)新加坡|坡|狮城|SG|Singapore"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美|us|unitedstates|united states"}
   - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台|新北|彰化|TW|Taiwan"}
-  - {name: 🌐 其他节点, type: select, include-all: true, filter: "(^(?!.*(台|新北|彰化|TW|Taiwan|KR|Korea|KOR|首尔|韩|韓|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|香港|HK|Hong Kong|🇭🇰|HongKong|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|新加坡|坡|狮城|SG|Singapore)).*)}
+  - {name: 🌐 其他节点, type: select, include-all: true, filter: "(^(?!.*(台|新北|彰化|TW|Taiwan|KR|Korea|KOR|首尔|韩|韓|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|香港|HK|Hong Kong|🇭🇰|HongKong|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|新加坡|坡|狮城|SG|Singapore)).*)"}
   - {name: 🔯 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: 🔯 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$" }
   - {name: 🔯 狮城故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(台|日|韩|深|美)).)*$"}
